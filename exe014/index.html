@@ -6,9 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Exe010
-      
-    </title>
+    <title>Exe014</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,29 +21,37 @@
   </head>
   <body class="bg-dark">
     <main>
-      <h1 class="text-white text-center">Exe010</h1>
-      <div class="container bg-white corpo  p-2 rounded">
+      <h1 class="text-white text-center">Exe014</h1>
+      <div class="container bg-white corpo p-2 rounded">
         <h4 class="text-center pb-2">Aluguel de Carro</h4>
         <p>
-          
-            <label for="valorEmMetros">Metros: </label>
-            <input
-              type="number"
-              name="valorEmMetros"
-              id="valorEmMetros"
-              class="btn bg-dark text-white"
-            />
-          <input
-          type="button"
-          value="Converter"
-          class="btn bg-dark text-white"
-          onclick="converterMedidas()"
-          id="calcularResultado"
-                />
+          <label for="KmPercorridos">Quilômetros Percorridos: </label>
+          <input type="number" name="KmPercorridos" id="KmPercorridos"
+          class="btn bg-dark text-white" /
         </p>
-        <div >
-          <div class="justify-content-center d-flex bg-dark rounded  text-white w-100 m-auto p-2" id="telaDeResultado">Resultado aqui...
-          
+
+        <p>
+          <label for="diasAlugado">Dias alugado: </label>
+          <input
+            type="number"
+            name="diasAlugado"
+            id="diasAlugado"
+            class="btn bg-dark text-white"
+          />
+          <input
+            type="button"
+            value="Calcular custo final"
+            class="btn bg-dark text-white"
+            onclick="mostrarResultadoNaTela()"
+            id="calcularResultado"
+          />
+        </p>
+        <div>
+          <div
+            class="justify-content-center d-flex bg-dark rounded text-white w-100 m-auto p-2"
+            id="telaDeResultado"
+          >
+            Resultado aqui...
           </div>
         </div>
       </div>
