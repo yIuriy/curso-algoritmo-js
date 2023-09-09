@@ -6,9 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Exe010
-      
-    </title>
+    <title>Exe019</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,29 +21,40 @@
   </head>
   <body class="bg-dark">
     <main>
-      <h1 class="text-white text-center">Exe010</h1>
-      <div class="container bg-white corpo  p-2 rounded">
-        <h4 class="text-center pb-2">Aluguel de Carro</h4>
+      <h1 class="text-white text-center">Exe019</h1>
+      <div class="container bg-white corpo p-2 rounded">
+        <h4 class="text-center pb-2">Aproveitamento do Aluno</h4>
         <p>
-          
-            <label for="valorEmMetros">Metros: </label>
-            <input
-              type="number"
-              name="valorEmMetros"
-              id="valorEmMetros"
-              class="btn bg-dark text-white"
-            />
+          <label for="primeiraNota">Primeira Nota do Aluno: </label>
           <input
-          type="button"
-          value="Converter"
-          class="btn bg-dark text-white"
-          onclick="mostrarResultadoNaTela()"
-          id="calcularResultado"
-                />
+            type="number"
+            name="primeiraNota"
+            id="primeiraNota"
+            class="btn bg-dark text-white"
+          />
         </p>
-        <div >
-          <div class="justify-content-center d-flex bg-dark rounded  text-white w-100 m-auto p-2" id="telaDeResultado">Resultado aqui...
-          
+        <p>
+          <label for="segundaNota">Segunda Nota do Aluno: </label>
+          <input
+            type="number"
+            name="segundaNota"
+            id="segundaNota"
+            class="btn bg-dark text-white"
+          />
+          <input
+            type="button"
+            value="Calcular Situação"
+            class="btn bg-dark text-white mt-2"
+            onclick="mostrarResultadoNaTela()"
+            id="calcularResultado"
+          />
+        </p>
+        <div>
+          <div
+            class="justify-content-center bg-dark rounded text-white w-100 m-auto p-2"
+            id="telaDeResultado"
+          >
+            Resultado aqui...
           </div>
         </div>
       </div>
