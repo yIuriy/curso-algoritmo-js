@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Exe0</title>
+    <title>Exe27</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,20 +21,32 @@
   </head>
   <body class="bg-dark">
     <main>
-      <h1 class="text-white text-center">Exe0</h1>
+      <h1 class="text-white text-center">Exe027</h1>
       <div class="container bg-white corpo p-2 rounded">
-        <h4 class="text-center pb-2"></h4>
+        <h4 class="text-center pb-2">Situação do Aluno</h4>
         <p>
-          <label for=""></label>
+          <label for="primeiraNota">Primeira nota do aluno: </label>
           <input
             type="number"
-            name=""
-            id=""
+            name="primeiraNota"
+            id="primeiraNota"
             class="btn bg-dark text-white"
+            value="0"
           />
+        </p>
+        <p>
+          <label for="segundaNota">Segunda nota do aluno: </label>
+          <input
+            type="number"
+            name="segundaNota"
+            id="segundaNota"
+            class="btn bg-dark text-white"
+            value="0"
+          />
+
           <input
             type="button"
-            value=""
+            value="Analisar"
             class="btn bg-dark text-white"
             onclick="mostrarResultadoNaTela()"
             id="calcularResultado"
