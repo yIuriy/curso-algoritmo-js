@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Exe035</title>
+    <title>Exe036</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,30 +21,21 @@
   </head>
   <body class="bg-dark">
     <main>
-      <h1 class="text-white text-center">Exe035</h1>
+      <h1 class="text-white text-center">Exe036</h1>
       <div class="container bg-white corpo p-2 rounded">
-        <h4 class="text-center pb-2">Sistema de Aluguel de Carros</h4>
-        <p>Tipo de Carro Alugado: </p>
+        <h4 class="text-center pb-2">Programa Vida Saudável</h4>
+        <p>Insira quantas horas de atividade física você praticou no mês e descobra quanto R$ irá ganhar.</p>
         <p>
-          <input type="radio" name="tipoCarroAlugado" id="carroPopular" checked
+          <label for="horasAtividadeFisica">Horas de Atividades Físicas Praticadas: </label>
+          <input
+            type="number"
+            name="horasAtividadeFisica"
+            id="horasAtividadeFisica"
+            class="btn bg-dark text-white"
           />
-          <label for="carroPopular">Carro Popular</label>
-        </p>
-        <p>
-          <input type="radio" name="tipoCarroAlugado" id="carroLuxo" />
-          <label for="carroLuxo">Carro De Luxo</label>
-        </p>
-        <p>
-          <label for="diasAlugado">Dias com o veículo alugado: </label>
-          <input type="number" name="diasAlugado" id="diasAlugado"
-          class="btn bg-dark text-white">
-        </p>
-        <p>
-          <label for="kmPercorridos">Quilômetros percorridos: </label>
-          <input type="number" name="kmPercorridos" id="kmPercorridos" class="btn bg-dark text-white" />
           <input
             type="button"
-            value="Calcular"
+            value="Verificar Valor Ganho"
             class="btn bg-dark text-white"
             onclick="mostrarResultadoNaTela()"
             id="calcularResultado"

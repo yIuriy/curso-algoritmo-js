@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Exe035</title>
+    <title>Exe037</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,27 +21,36 @@
   </head>
   <body class="bg-dark">
     <main>
-      <h1 class="text-white text-center">Exe035</h1>
+      <h1 class="text-white text-center">Exe037</h1>
       <div class="container bg-white corpo p-2 rounded">
-        <h4 class="text-center pb-2">Sistema de Aluguel de Carros</h4>
-        <p>Tipo de Carro Alugado: </p>
+        <h4 class="text-center pb-2">Calcular Reajuste Salarial</h4>
+        <p>Sexo do Funcionário</p>
         <p>
-          <input type="radio" name="tipoCarroAlugado" id="carroPopular" checked
+          <input type="radio" name="sexoInformado" id="sexoFeminino" checked />
+          <label for="sexoFeminino">Feminino</label>
+        </p>
+
+        <p>
+          <input type="radio" name="sexoInformado" id="sexoMasculino" />
+          <label for="sexoMasculino">Masculino</label>
+        </p>
+        <p>
+          <label for="salarioAtual">Salário Atual do Funcionário: </label>
+          <input
+            type="number"
+            name="salarioAtual"
+            id="salarioAtual"
+            class="btn bg-dark text-white"
           />
-          <label for="carroPopular">Carro Popular</label>
         </p>
         <p>
-          <input type="radio" name="tipoCarroAlugado" id="carroLuxo" />
-          <label for="carroLuxo">Carro De Luxo</label>
-        </p>
-        <p>
-          <label for="diasAlugado">Dias com o veículo alugado: </label>
-          <input type="number" name="diasAlugado" id="diasAlugado"
-          class="btn bg-dark text-white">
-        </p>
-        <p>
-          <label for="kmPercorridos">Quilômetros percorridos: </label>
-          <input type="number" name="kmPercorridos" id="kmPercorridos" class="btn bg-dark text-white" />
+          <label for="anosNaEmpresa">Anos trabalhados na empresa:</label>
+          <input
+            type="number"
+            name="anosNaEmpresa"
+            id="anosNaEmpresa"
+            class="btn bg-dark text-white"
+          />
           <input
             type="button"
             value="Calcular"
@@ -52,7 +61,7 @@
         </p>
         <div>
           <div
-            class="justify-content-center d-flex bg-dark rounded text-white w-100 m-auto p-2"
+            class="justify-content-center bg-dark rounded text-white w-100 m-auto p-2"
             id="telaDeResultado"
           >
             Resultado aqui...
